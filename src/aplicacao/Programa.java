@@ -10,6 +10,7 @@ public class Programa
 		Locale.setDefault(Locale.US);
 		
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Matrix [M][N]");
 		
 		System.out.print("Digite o numero de Linhas: ");
@@ -17,9 +18,24 @@ public class Programa
 		int l = sc.nextInt();
 		
 		System.out.print("Digite o numero de Colunas: ");
+		
 		int c = sc.nextInt();
 		
-		int matrix[][] = new int[l][c];
+		int[][] matriz = new int[l][c];
+		
+		sc.nextLine();
+				
+		for(int i = 0; i < matriz.length; i++) 
+		{
+			for(int j = 0; j < matriz[i].length; j++) 
+			{
+				//System.out.printf("Posicão ["+i+"]"+" ["+j+"] =");
+				
+				matriz[i][j] = sc.nextInt();
+			}
+		}
+		
+		
 		
 		
 		
